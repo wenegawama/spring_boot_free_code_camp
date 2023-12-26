@@ -17,7 +17,7 @@ public class PersonService {
     private final PersonDao personDao;
 
     @Autowired
-    public PersonService(@Qualifier("fakeDao") PersonDao personDao) { //o Autowired é para injetar a interface PersonaDao aqui
+    public PersonService(@Qualifier("postgres") PersonDao personDao) { //o Autowired é para injetar a interface PersonaDao aqui
         this.personDao = personDao;
     }
 
